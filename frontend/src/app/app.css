@@ -1,0 +1,48 @@
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  margin-top: 0;
+}
+
+.task-card {
+  margin-top: 30px;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.task p {
+  margin-bottom: 0;
+  color: #666;
+}
+
+.status {
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
