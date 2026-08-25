@@ -1,0 +1,14 @@
+<h2>Mis tareas</h2>
+
+@for (task of tasks; track task.title) {
+  <div>
+    <h3>{{ task.title }}</h3>
+    <p>{{ task.description }}</p>
+
+    @if (task.completed) {
+      <p>✅ Completada</p>
+    } @else {
+      <p>⏳ Pendiente</p>
+    }
+  </div>
+}

@@ -1,33 +1,5 @@
-<div class="container">
+<h1>{{ title }}</h1>
 
-  <h1>{{ title }}</h1>
+<p>Administrador de tareas</p>
 
-  <p class="subtitle">
-    Administrador de tareas
-  </p>
-
-  <div class="task-card">
-
-    <h2>Mis tareas</h2>
-
-    @for (task of tasks; track task.title) {
-      <div class="task">
-
-        <div>
-          <strong>{{ task.title }}</strong>
-
-          <p>{{ task.description }}</p>
-        </div>
-
-        <span class="status">
-          {{ task.completed ? 'Completada' : 'Pendiente' }}
-        </span>
-
-      </div>
-    }
-
-    <button>+ Nueva tarea</button>
-
-  </div>
-
-</div>
+<app-task-list></app-task-list>
